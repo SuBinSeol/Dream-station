@@ -1,0 +1,207 @@
+
+    #comments{
+        width:500px;
+    }
+    #comment_view{
+        text-align: center;
+    }
+    #check{
+        width:34px;
+        height:70px;
+        text-align:center;
+    }
+    #story,#story1{
+        width:500px;
+        height:70px;
+    }
+    .nav{
+        font-size: 1.5em;
+    }
+    #post_view{
+        padding: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .line{
+        border-bottom:2px solid gray;
+        border-top:2px solid gray;
+        height:40px;
+    }
+    .line1{
+        border-bottom:1px solid gray;
+        border-top:1px solid gray;
+        background-color:white;
+        text-align: left;
+    }
+    .line2{
+        width:540px;
+        border-bottom:1px solid gray;
+        background-color:white;
+    }
+    .line3{
+        padding:8px 0 0 0;
+        background-color:white;
+    }
+    .line5{
+        padding:8px 0 0 0;
+        background-color:white;
+    }
+    .d_com1{
+        border-top:1px solid gray;
+        border-left:1px solid gray;
+        border-right:1px solid gray;
+        font-weight:bold;
+        background-color:white;
+    }
+    .d_com2{
+        border-left:1px solid gray;
+        border-right:1px solid gray;
+        background-color:white;
+    }
+    .d_com3{
+        font-size: 1em;
+        font-weight:normal;
+        border-left:1px solid gray;
+        border-right:1px solid gray;
+        color:gray;
+        background-color:white;
+    }
+    .d_com4{
+        border-bottom:1px solid gray;
+        border-left:1px solid gray;
+        border-right:1px solid gray;
+        background-color:white;
+    }
+    .d_com5{
+        padding:8px 0 0 0;
+        background-color:white;
+    }
+    .list{
+        height:300px;
+    }
+    th{
+        width:400px;
+    }
+    td{
+        width: 140px;
+    }
+    #check{
+        text-align:right;
+    }
+    .main1 {
+      list-style-type: none;
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+      margin: 0 auto;
+      
+    font-size: 1.5em;
+   }
+
+   .main1>li {
+      float: left;
+      text-align: center;
+      position: relative;
+   }
+
+   .main1>li:hover .main2 {
+      left: 0;
+   }
+
+   .main1>li a:hover {
+      text-decoration: none;
+   }
+   .main2 {
+      list-style-type: none;
+      text-decoration: none;
+      position: absolute;
+      left: -9999px;
+      background: #ccc;
+      width: 120%;
+   }
+    *{ 
+        margin:0;
+        padding: 0;
+        /* margin: 2px 2px 2px 2px; */
+        
+    }
+    #SignUp{
+        /* position:absolute;
+        top:0;right:0;bottom:0;left:0;
+        display:-webkit-box;
+        display:-moz-box;
+        display:-ms-flexbox;
+        display:-webkit-flex;
+        display:flex;
+    
+        align-items:center;
+        justify-content:center;
+        -webkit-align-items:center;
+        -webkit-justify-content:center;
+  
+        -webkit-box-pack:center;
+        -webkit-box-align:center; 
+        -moz-box-pack:center;
+        -moz-box-align:center; 
+        -ms-box-pack:center;
+        -ms-box-align:center;
+        padding: 0;     
+        margin-bottom: 0; */
+        /* border: 1px solid #bcbcbc; */
+        /* text-align: center; */
+    }
+    /* #id,#name,#tel,#birth,#gender,#aff,#email,#email2,#selectEmail,#postcode,#address,#detailAddress,#old_password,#new_password,#new_password2{
+        width : 350px;
+        padding : 8px;
+        margin : 2px;
+    }
+    #pw_check,#post_find{
+        width : 100px;
+        padding : 9px;
+        margin : 4px;
+        border:3px;/*버튼테두리 없애기 
+        outline:20px;/*버튼테두리 없애기#D9E5FF #E6E6FA
+        line-height:1.3em;
+        background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    /* background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); 
+    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); 
+    } 
+    #check{
+        width : 152px;
+        padding : 9px;
+        margin : 4px;
+        border:3px;/*버튼테두리 없애기 
+        outline:20px;/*버튼테두리 없애기#D9E5FF #E6E6FA
+        line-height:1.3em;
+        background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    /* background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); */
+    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); 
+    }
+    /* a { color:#888888;    line-height:3em; font-size: 0.8em;} */
+
+    /* #menu{ float: right;} */
+    /* #graph,#table{
+        top:-330px;right:0;bottom:0;left:0;
+        text-align: left;
+        font-family: "맑은 고딕";
+        font-size: 2em;
+        color: #333;
+    } */
+    body{
+        /* left:400px;
+        position:absolute; */
+        background-repeat : no-repeat;
+        background-size : auto;
+
+
+        line-height:2em;
+        background-color: #E6E6FA;
+        padding: 50px;
+        /* background-image : url('image3.jpg'); */
+        background-repeat : no-repeat;
+        background-size : cover;
+        
+        font-family: "맑은 고딕";
+        /* font-size: 1em; */
+        color: #333;
+    }

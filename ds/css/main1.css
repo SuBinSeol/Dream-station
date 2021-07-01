@@ -1,0 +1,35 @@
+.main1 {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    /* 상 우 하 좌*/
+    /* padding:0px 250px 0px 0px;
+    margin: 0 auto;
+    position: absolute;
+    left: 1550px;
+    top: 20px; 
+    color:azure; */
+  }
+
+  .main1>li {
+      float: left;
+      text-align: center;
+      position: relative;
+  }
+
+  .main1>li:hover .main2 {
+      left: 0;
+  }
+
+  .main1>li a:hover {
+      text-decoration: none;
+  }
+
+  .main2 {
+      list-style-type: none;
+      text-decoration: none;
+      position: absolute;
+      left: -9999px;
+      background: #ccc;
+      width: 120%;
+  }

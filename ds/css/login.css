@@ -1,0 +1,41 @@
+*{ 
+    margin:0;
+    padding: 0;
+    text-align: center;
+  }
+  #login{
+      padding: 50px;     
+      margin-bottom: 30px;
+  }
+  #id, #pw{
+    text-align : left;
+    width : 400px;
+    padding : 8px;
+    margin : 2px;
+  }
+  #button{
+    text-align : center;
+    width : 400px;
+    padding : 9px;
+    margin : 4px;
+    border:3px;/*버튼테두리 없애기 */
+    outline:20px;/*버튼테두리 없애기#D9E5FF #E6E6FA*/
+    line-height:1.3em;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+    /* background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); */
+    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%); */
+  }
+  a { color:#333;    line-height:3em; font-size: 0.8em;}
+    body {
+        /* top: 5000px; */
+        line-height:0.3em;
+        /* background-color: #E6E6FA; */
+        padding: 50px;
+        background-repeat : no-repeat;
+        background-size : cover;
+        background-image: url("img/dream/loginback.jpg");
+        font-family: "맑은 고딕";
+        font-size: 2.5em;
+        color: #333;
+    }

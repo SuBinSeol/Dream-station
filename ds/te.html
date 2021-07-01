@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+  
+  <body>
+    <div class="main">
+      <input type="password" placeholder="비밀번호를 입력하세요">
+      <i class="fa fa-eye fa-lg"></i>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function(){
+    $('.main i').on('click',function(){
+        $('input').toggleClass('active');
+        if($('input').hasClass('active')){
+            $(this).attr('class',"fa fa-eye-slash fa-lg")
+            .prev('input').attr('type',"text");
+        }else{
+            $(this).attr('class',"fa fa-eye fa-lg")
+            .prev('input').attr('type','password');
+        }
+    });
+});
+
+  </script>
+  <style>
+    div.main{
+      position: relative;
+      padding: 20px;
+    }
+    div.main input{
+      width: 300px;
+      height: 30px;
+      background-color: black;
+      border: 0;
+      color: white;
+      text-indent: 10px;
+    }
+    div.main i{
+      position: absolute;
+      left: 15%;
+      top: 27px;
+      color: orange;
+    }
+  </style>
+</html>

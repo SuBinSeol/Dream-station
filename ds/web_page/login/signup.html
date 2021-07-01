@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SIGN UP</title>
+        <link rel="stylesheet" href="../../css/components.css">
+        <link rel="stylesheet" href="../../css/icons.css">
+        <link rel="stylesheet" href="../../css/responsee.css">
+        <link rel="stylesheet" href="../../owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="../../owl-carousel/owl.theme.css">
+        <link rel="stylesheet" href="../../css/lightcase.css">
+        <link rel="stylesheet" href="../../css/main1.css">
+        <link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- CUSTOM STYLE -->      
+        <link rel="stylesheet" href="../../css/template-style1.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,700,900&amp;subset=latin-ext" rel="stylesheet"> 
+        <script type="text/javascript" src="../../js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+        <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script type="text/javascript" src="../../js/navigation_bar.js"></script>
+    </head>
+<body class="size-1280">
+  <header role="banner" class="position-absolute">    
+    <nav class="background-transparent background-primary-dott full-width sticky">
+      <div class="logo hide-l hide-xl hide-xxl">
+         <a href="../index/index.php" class="logo">
+          <img class="logo-dark" src="../../img/dream/logo123.PNG" alt="">
+        </a>
+      </div>
+      <div id="login" style='float: right;'>
+        <ul class="main1" style='position: absolute;left: 80%;top: 10%;'>
+          <div class="loginlog" id="loginlog"></div>
+          <script>cc();</script>
+        </ul>
+      </div>
+      <div class="top-nav"> 
+        <div class="top-nav left-menu">
+          <ul class="right top-ul chevron">
+             <li><a href="../index/index.php">Home</a></li>
+             <li><a href="../about-us/about-us.php">About Us</a></li>
+             <li><a href="../request/request.php">Request</a></li>
+          </ul>
+       </div>
+        
+        <ul class="logo-menu">
+          <a href="../index/index.php" class="logo">
+            <img class="logo-white" src="../../img/dream/logo123.PNG" alt="">
+            <img class="logo-dark" src="../../img/dream/logo123.PNG" alt="">
+          </a>
+        </ul>
+        
+        <div class="top-nav right-menu">
+          <ul class="top-ul chevron">
+             <li>
+               <a href="#">Community</a>
+               <ul>
+                 <li><a href="../community/story.php">Story</a></li>
+                 <li><a href="../community/member.php">Member</a></li>
+               </ul>
+             </li>
+             <li><a href="../gallery/gallery.php">Gallery</a></li>
+             <li><a href="../location/location.php">Location</a></li>
+          </ul> 
+       </div>
+      </div>
+    </nav>
+  </header>
+    <main role="main">
+        <article>
+          <header class="section background-image text-center" style="background-image:url(../../img/dream/backg.jpg)">
+            <h1 class="animated-element slow text-extra-thin text-white text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-30 margin-top-130">
+              Sign Up
+            </h1>
+            <p class="animated-element text-white">회원가입</p>
+            <img class="arrow-object" src="../../img/arrow-object-white.svg" alt="">
+          </header>
+          <div class="s-12 m-12 l-4 center">
+          </br></br>
+            <h3 class="text-size-30 margin-bottom-40 text-center"><b>회원가입</b></h3>
+            <form name="join" class="customform" method="post" action="../../php/login/signupdb.php" onsubmit="return checkIt(this)">
+              <table style="border: 0px solid red; margin-left: auto; margin-right: auto;">
+                <div class="line">
+                  <div class="margin">
+                    <div class="s-12 m-12 l-6">
+                      <input name="id" class="id" placeholder="   아이디" title="id" type="text" style="color:black;  margin:0px;"/>
+                    </div>
+                    <div class="s-12 m-12 l-6">
+                      <div class="s-12" id="button1"><button class="button border-radius text-white background-primary" type="submit">중복확인</button></div></br>
+                    </div>
+                  </div>
+                </div>            
+                <div class="line">    
+                  <div class="s-12">
+                    <div class="main">
+                      <input id="password" name="password" class="password" placeholder="비밀번호" title="password" type="password" style="color:black;  margin:0px;"/>
+                      <i class="fa fa-eye fa-lg"></i></br>
+                      <div class="check_font" id="pw_check" style="color:red;"></div>
+                    </div>
+                  </br>
+                  </div>
+                  <div class="s-12">
+                    <div class="main">
+                      <input id="password2"name="password2" class="password2" placeholder="비밀번호 확인" title="password2" type="password" style="color:black;  margin:0px;"/>
+                      <i class="fa fa-eye fa-lg"></i></br>
+                      <div class="check_font" id="pw2_check" style="color:red;"></div>
+                    </div>
+                  </br>
+                  </div>
+                  <div class="s-12">
+                    <input id="name" name="name" class="name" placeholder="   이름" title="name" type="text" style="color:black; margin:0px;"/>
+                    <div class="check_font" id="name_check" style="color:red;"></div>
+                  </br>
+                  </div>
+                  <div class="s-12">
+                    <input id="tel" name="tel" class="tel" placeholder="   전화번호( - 생략)" title="tel" type="text" style="color:black;  margin:0px;"/>
+                    <div class="check_font" id="phone_check" style="color:red;"></div>
+                  </br>
+                  </div>
+                  <div class="s-12 m-12 l-6">
+                    <div class="s-12" id="check"><button class="button border-radius text-white background-primary" type="submit">가입</button></div>
+                  </div>
+                  <div class="s-12 m-12 l-6">
+                    <div class="s-12" id="button1"><button class="button border-radius text-white background-primary" type="submit" onclick="javascript:history.back();">취소</button></div>
+                  </div>
+                </div>  
+              </table>  
+            </form></br></br>
+          </div> 
+          <footer>
+            <!-- Bottom Footer -->
+            <section class="padding-2x background-dark full-width">
+              <div class="s-18 l-10">
+                <img class="logo-menu" src="../../img/dream/logo123.PNG" alt="">
+                <br>
+                <p class="text-size-18">&nbsp&nbsp&nbsp&nbsp 주소 : 부산광역시 부산진구 가야3동 엄광로 176 동의대학교 건윤관(21번 건물)</p>
+                <p class="text-size-18">&nbsp&nbsp&nbsp&nbsp 이용시간 : 월 ~ 금 9:00 ~ 17:00</p>
+                <p class="text-size-18">&nbsp&nbsp&nbsp&nbsp 이용문의 : 051-890-4375~4376</p>
+              </div>  
+            </section>
+          </footer>
+        </article>
+      </main>
+    
+</body>
+<script>
+  //모든 공백 체크 정규식
+  var empJ = /\s/g;
+
+  //아이디 정규식 + a-z, 0-9로 시작하는 4-12자리 아이디를 만들 수 있다.
+  var idJ = /^[a-z0-9]{4,12}$/;
+
+  // 비밀번호 정규식 + A-Z,a-z,0-9로 시작하는 4-12자리 비밀번호를 설정할 수 있다.
+  var pwJ = /^[A-Za-z0-9]{6,12}$/; 
+
+  // 이름 정규식 + 가-힇, 한글로 이뤄진 문자만으로 2-6자리 이름을 적어야 한다.
+  var nameJ = /^[가-힣]{2,6}$/;
+
+  // 휴대폰 번호 정규식 + -생략하고 01?(3글자) 방식으로 나머지 적용하면 된다.
+  var phoneJ = /^01([0|1|6|7|8|9]?)?([0-9]{3,4})?([0-9]{4})$/;
+
+  // 이름에 특수문자 들어가지 않도록 설정
+  $("#name").blur(function() {
+    if (nameJ.test($(this).val())) {
+      console.log(nameJ.test($(this).val()));
+      $("#name_check").text('');
+    } else {
+      $('#name_check').text('이름을 확인해주세요.');
+      $('#name_check').css('color', 'red');
+    }
+  });
+
+  // 휴대전화
+	$('#tel').blur(function(){
+		if(phoneJ.test($(this).val())){
+			console.log(nameJ.test($(this).val()));
+			$("#phone_check").text('');
+		} else {
+			$('#phone_check').text('휴대폰번호를 확인해주세요.');
+			$('#phone_check').css('color', 'red');
+		}
+	});
+
+  // 비밀번호 조건 설정
+  $("#password").blur(function() {
+    if (pwJ.test($(this).val())) {
+      console.log(pwJ.test($(this).val()));
+      $("#pw_check").text('');
+    } else {
+      $('#pw_check').text('비밀번호는 6자리 이상 12자리 이하입니다.');
+      $('#pw_check').css('color', 'red');
+    }
+  });
+
+  // 비밀번호 조건 설정2
+  $("#password2").blur(function() {
+    if (pwJ.test($(this).val())) {
+      console.log(pwJ.test($(this).val()));
+      $("#pw2_check").text('');
+    } else {
+      $('#pw2_check').text('비밀번호는 6자리 이상 12자리 이하입니다.');
+      $('#pw2_check').css('color', 'red');
+    }
+  });
+
+
+  //회원가입 전 검사함수
+  function ch(pw,pw2,n,t){
+    if(pw==null){
+    }
+    if(pw!=pw2){
+    }else{
+    }
+  }
+  function checkIt(f){
+    //아이디
+    var text_id = f.id.value;
+    text_id=text_id.trim();
+    //비밀번호
+    var text_password = f.password.value;
+    text_password=text_password.trim();
+    //비밀번호확인
+    var text_password2 = f.password2.value;
+    text_password2=text_password2.trim();
+    //이름
+    var text_name = f.name.value;
+    text_name=text_name.trim();
+    //전화번호
+    var text_tel = f.tel.value;
+    text_tel=text_tel.trim();
+    if(text_password!=text_password2){
+        alert("비밀번호를 다시 확인해 주세요.");
+        return false;
+    }
+    if (text_id==''|| text_password==''|| text_name==''|| text_tel==''){
+        alert("빈 항목이 존재합니다.");
+        return false;
+    }
+    return true;
+    //비밀번호
+    var text_old_password = f.old_password.value;
+    text_password=text_old_password.trim();
+
+    var text_new_password = f.new_password.value;
+    text_new_password=text_new_password.trim();
+    //비밀번호확인
+    var text_new_password2 = f.new_password2.value;
+    text_new_password2=text_new_password2.trim();
+
+    alert(text_password==text_password2);
+    if(text_password==text_password2){
+        alert("비밀번호를 다시 확인해 주세요.");
+        return false;
+    }else{
+      alert(text_password==text_password2);
+      return false;
+    }
+    if(text_password=="11"){
+        alert("비밀번호를 다시 확인해 주세요.");
+        return false;
+    }
+    if(text_new_password!=text_new_password2){
+        alert("비밀번호를 다시 확인해 주세요.");
+        return false;
+    }
+    if (text_id==''|| text_password==''|| text_name==''|| text_tel==''){
+        alert("빈 항목이 존재합니다.");
+        return false;
+    }
+    return true;
+  }
+
+  //아이디 중복확인 ajax
+  $(document).ready(function() {
+    $(document).on("click","#button1", function(event){  
+      var input_value = $("input[name='id']").val(); 
+      var json_data = JSON.stringify(input_value);
+      if(!input_value) {
+        alert("아이디를 입력하세요");
+        $("input[name='id']").focus();
+        return false;
+      }    
+      event.preventDefault();           
+      $.ajax({    //create an ajax request to display.php
+        type: "POST",
+        data: $("form").serialize(),
+        url: "../../php/login/idCheck.php",             
+        //dataType: "json",   //expect html to be returned                
+        success: function(result){ 
+          console.log(result);
+          if(result=="사용가능한 아이디 입니다."){
+            id_checks="Y";
+          }
+          else{
+            id_checks="N";
+          }
+          alert(result);
+        }
+
+      });
+    });
+  });
+
+  $(document).ready(function(){
+    $('.main i').on('click',function(){
+        $('input').toggleClass('active');
+        if($('input').hasClass('active')){
+          $(this).attr('class',"fa fa-eye-slash fa-lg")
+          .prev('input').attr('type',"text");
+        }else{
+          $(this).attr('class',"fa fa-eye fa-lg")
+          .prev('input').attr('type','password');
+        }
+    });
+  });
+  </script>
+
+  <style>
+    div.main{
+      position: relative;
+    }
+    div.main input{
+      background-color: black;
+      border: 0;
+      color: white;
+      text-indent: 10px;
+    }
+    div.main i{
+      position: absolute;
+      left: 93%;
+      top: 14px;
+      color: black;
+    }
+  </style>
+</html>
